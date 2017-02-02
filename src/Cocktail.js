@@ -4,9 +4,11 @@ import './cocktail-styles.css';
 // Components
 import { SearchForm } from './components/search/SearchForm';
 import { SpiritFamilyTile } from './components/SpiritFamilyTile';
+import { Link } from './components/router';
 
 // Services
-import {loadSpiritFamilies} from './lib/cocktailService';
+import { loadSpiritFamilies } from './lib/cocktailService';
+import { loadDrinks } from './lib/drinksService'
 
 class Cocktail extends Component {
   state = {
@@ -16,6 +18,7 @@ class Cocktail extends Component {
 
   componentDidMount() {
     loadSpiritFamilies().then(spiritFamilies => this.setState({spiritFamilies}));
+    loadDrinks().then(drinks => this.setState({drinks}));
   }
 
   handleInputChange = (e) => {
@@ -36,7 +39,7 @@ class Cocktail extends Component {
     return (
       <div className="cocktail">
         <div className="header">
-          <h1>Cocktail</h1>
+          <h1><Link to="/">Cocktail</Link></h1>
         </div>
 
         <section className="cocktail-content">
@@ -50,7 +53,11 @@ class Cocktail extends Component {
 
           <div className="spirit-categories">
             {this.state.spiritFamilies.map(spirit =>
-              <SpiritFamilyTile name={spirit.name} />
+              <div className="spirit" key={spirit.id}>
+                <Link to={spirit.path}>
+                  <SpiritFamilyTile name={spirit.name} />
+                </Link>
+              </div>
             )}
           </div>
 

@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Cocktail from './Cocktail';
 
+import {Router} from './components/router';
+
 ReactDOM.render(
-  <Cocktail />,
+  <Router>
+  	<Cocktail />
+  </Router>,
   document.getElementById('root')
 );

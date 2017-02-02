@@ -2,12 +2,12 @@ import React from 'react';
 
 export const SpiritFamilyTile = (props) => {
 	return (
-		<div className="spirit">
+		<div>
 		  <h2>{props.name}</h2>
 		</div>
 	);
 }
 
 SpiritFamilyTile.propTypes = {
-	name: React.PropTypes.string.isRequired
+	name: React.PropTypes.string
 }
