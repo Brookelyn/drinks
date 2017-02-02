@@ -1,0 +1,80 @@
+.drink {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.drink-pic {
+  flex: 1;
+  margin: 0 0.5rem 0 0;
+}
+
+.drink-pic > img {
+  min-width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 5%;
+}
+
+.drink-text {
+  flex: 1;
+  padding: 16px;
+  margin: 0.5rem;
+}
+
+.drink-text > h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 0.5rem;
+  text-align: center;
+}
+
+.whisky-header {
+  height: 30px;
+  background-color: #994d00;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.whisky-footer {
+  height: 60px;
+  background-color: #994d00;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-heading {
+  border-bottom: 3px solid #994d00;
+}
+
+.mb3 {
+  margin-bottom: 1rem;
+}
+
+li::before {
+  content: '■ ';
+  color: #994d00;
+  font-size: 2rem;
+  line-height: 0;
+  position: absolute;
+  margin-left: -1.5rem;
+  top: 43%
+}
+
+.listing {
+  position: relative;
+  margin-left: 1.5rem;
+}
+
