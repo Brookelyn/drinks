@@ -2,13 +2,21 @@ import React, { Component } from 'react';
 import './cocktail-styles.css';
 
 // Components
-import { SearchForm } from './components/search/SearchForm'
+import { SearchForm } from './components/search/SearchForm';
+import { SpiritFamilyTile } from './components/SpiritFamilyTile';
+
+// Services
+import {loadSpiritFamilies} from './lib/cocktailService';
 
 class Cocktail extends Component {
   state = {
-    searchText: ''
+    searchText: '',
+    spiritFamilies: []
   }
 
+  componentDidMount() {
+    loadSpiritFamilies().then(spiritFamilies => this.setState({spiritFamilies}));
+  }
 
   handleInputChange = (e) => {
     this.setState({
@@ -18,11 +26,13 @@ class Cocktail extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log('User is searching for' + this.state.searchText);
+    console.log('User is searching for ' + this.state.searchText);
+    this.setState({
+      searchText: ''
+    });
   }
 
   render() {
-    // console.log(this.state.searchText);
     return (
       <div className="cocktail">
         <div className="header">
@@ -39,29 +49,12 @@ class Cocktail extends Component {
           </div>
 
           <div className="spirit-categories">
-            <div className="spirit">
-              <h2>Whisky</h2>
-            </div>
-            <div className="spirit">
-              <h2>Gin</h2>
-            </div>
+            {this.state.spiritFamilies.map(spirit =>
+              <SpiritFamilyTile name={spirit.name} />
+            )}
           </div>
-          <div className="spirit-categories">
-            <div className="spirit">
-              <h2>Rum</h2>
-            </div>
-            <div className="spirit">
-              <h2>Vodka</h2>
-            </div>
-          </div>
-          <div className="spirit-categories">
-            <div className="spirit">
-              <h2>Tequila</h2>
-            </div>
-            <div className="spirit">
-              <h2>Everything else</h2>
-            </div>
-          </div>
+
+
         </section>
 
       </div>

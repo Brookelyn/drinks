@@ -90,11 +90,11 @@ h1, h2, h3, h4, h5, h6 {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	margin-bottom: 2rem;
 }
 
 .spirit {
 	width: 45%;
 	border: 2px solid darkblue;
 	height: 200px;
+	margin-bottom: 2rem;
 }

@@ -1,0 +1,34 @@
+{
+  "spiritFamily": [
+    {
+      "id": 1,
+      "name": "Whisky",
+      "path": "/whisky"
+    },
+    {
+      "id": 2,
+      "name": "Gin",
+      "path": "/gin"
+    },
+    {
+      "id": 3,
+      "name": "Rum",
+      "path": "/rum"
+    },
+    {
+      "id": 4,
+      "name": "Vodka",
+      "path": "/vodka"
+    },
+    {
+      "id": 5,
+      "name": "Tequila",
+      "path": "/tequila"
+    },
+    {
+      "id": 6,
+      "name": "Everything else",
+      "path": "/everything-else"
+    }
+  ]
+}
