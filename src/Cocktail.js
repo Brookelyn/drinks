@@ -1,14 +1,28 @@
 import React, { Component } from 'react';
 import './cocktail-styles.css';
 
+// Components
+import { SearchForm } from './components/search/SearchForm'
+
 class Cocktail extends Component {
-  constructor() {
-    super();
-    this.state = {
-      searchText: 'Search here'
-    }
+  state = {
+    searchText: ''
   }
+
+
+  handleInputChange = (e) => {
+    this.setState({
+      searchText:  e.target.value
+    });
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('User is searching for' + this.state.searchText);
+  }
+
   render() {
+    // console.log(this.state.searchText);
     return (
       <div className="cocktail">
         <div className="header">
@@ -17,12 +31,11 @@ class Cocktail extends Component {
 
         <section className="cocktail-content">
           <div className="search">
-            <form>
-              <input
-                type="text"
-                placeholder={this.state.searchText}
-              />
-            </form>
+            <SearchForm
+              searchText={this.state.searchText}
+              handleInputChange={this.handleInputChange}
+              handleSubmit={this.handleSubmit}
+            />
           </div>
 
           <div className="spirit-categories">
@@ -50,8 +63,6 @@ class Cocktail extends Component {
             </div>
           </div>
         </section>
-
-
 
       </div>
     );
