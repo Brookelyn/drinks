@@ -30,5 +30,355 @@
       "name": "Everything else",
       "path": "/everything-else"
     }
+  ],
+
+  "drinks": [
+    {
+      "name": "Old fashioned",
+      "equipment": [
+        "Shaker or stirring glass",
+        "A bar spoon (or teaspoon)",
+        "Rocks glass"
+      ],
+      "ingredients": [
+        {
+          "quantity": 1,
+          "measure": "teaspoon",
+          "ingredient": "caster sugar"
+        },
+        {
+          "quantity": 4,
+          "measure": "dashes",
+          "ingredient": "Angostura bitters"
+        },
+        {
+          "quantity": 50,
+          "measure": "ml",
+          "ingredient": "Scotch whisky"
+        },
+        {
+          "quantity": null,
+          "measure": null,
+          "ingredient": "Cubed ice"
+        },
+        {
+          "quantity": 1,
+          "measure": null,
+          "ingredient": "Orange"
+        }
+      ],
+      "method": "Add your sugar to a rocks glass with 4 dashes of Angostura bitters and a splash of hot water. Stir the mix until you have dissolved all of the sugar. Add 3 or 4 ice cubes and half of the Scotch whisky and stir for around 60 seconds. Top up the glass with more ice and add the rest of the whiskey, then stir for another 60 seconds. Cut a piece of orange peel abou the size of your thumb (be careful not to bend it). Hold the piece of orange peel between finger and thumb over the glass. Quickly bend the orange peel so the oil from the skin settles on the surface of the drink. Drop the orange peel into the drink, stir a couple more times and serve.",
+      "spiritFamily": "whisky",
+      "img": "http://cdn.liquor.com/wp-content/uploads/2015/08/woodford_oldfashd_2_800x800.png"
+    },
+    {
+      "name": "Rob Roy",
+      "equipment": [
+        "Martini glass",
+        "Mixing glass",
+        "A bar spoon (or teaspoon)",
+        "Strainer"
+      ],
+      "ingredients": [
+        {
+          "quantity": 50,
+          "measure": "ml",
+          "ingredient": "Scotch whisky"
+        },
+        {
+          "quantity": 25,
+          "measure": "ml",
+          "ingredient": "Sweet vermouth"
+        },
+        {
+          "quantity": null,
+          "measure": null,
+          "ingredient": "Ice cubes"
+        },
+        {
+          "quantity": 1,
+          "measure": null,
+          "ingredient": "Cherry"
+        }
+      ],
+      "method": "Fill a glass with ice. Put the Scotch whisky and vermouth into the glass. Stir using the bar spoon until well combined. Strain into a glass, and serve garnished with the cherry.",
+      "spiritFamily": "whisky",
+      "img": "https://uk.thebar.com/assets/en-gb/Images/AY/rob-roy$$069A0000000f8UAIAY.jpg?maxheight=360&maxwidth=540&quality=85"
+    },
+    {
+      "name": "Mojito",
+      "equipment": [
+        "Tall glass",
+        "Muddler",
+        "A bar spoon (or teaspoon)"
+      ],
+      "ingredients": [
+        {
+          "quantity": 50,
+          "measure": "ml",
+          "ingredient": "White rum"
+        },
+        {
+          "quantity": 2,
+          "measure": "teaspoons",
+          "ingredient": "Caster sugar"
+        },
+        {
+          "quantity": null,
+          "measure": null,
+          "ingredient": "Soda water"
+        },
+        {
+          "quantity": 2,
+          "measure": null,
+          "ingredient": "Lime wedges"
+        },
+        {
+          "quantity": 12,
+          "measure": null,
+          "ingredient": "Mint leaves"
+        },
+        {
+          "quantity": null,
+          "measure": null,
+          "ingredient": "Cubed ice"
+        }
+      ],
+      "method": "Muddle sugar, lime wedges and mint together in the glass. Half fill glass with ice, then add rum and a splash of soda water. Stir to combine. Fill remainder of glass with ice, top up with soda water, and garnish with a sprig of mint before serving.",
+      "spiritFamily": "rum",
+      "img": "hhttp://josephcphillips.com/wp-content/uploads/2015/04/tray-of-mojitos.jpg"
+    },
+    {
+      "name": "Margarita",
+      "equipment": [
+        "Rocks glass",
+        "Cocktail shaker",
+        "Strainer"
+      ],
+      "ingredients": [
+        {
+          "quantity": 50,
+          "measure": "ml",
+          "ingredient": "Blanco (silver) tequila"
+        },
+        {
+          "quantity": 35,
+          "measure": "ml",
+          "ingredient": "Orange liqueur (such as Cointreau)"
+        },
+        {
+          "quantity": 25,
+          "measure": "ml",
+          "ingredient": "Lime juice"
+        },
+        {
+          "quantity": null,
+          "measure": null,
+          "ingredient": "Cubed ice"
+        }
+      ],
+      "method": "Fill the cocktail shaker with ice. Add the tequila, orange liqueur and lime juice. Shake until cold, then strain into rocks glass and serve",
+      "spiritFamily": "tequila",
+      "img": "http://www.seriouseats.com/recipes/assets_c/2015/04/20150323-cocktails-vicky-wasik-margarita-thumb-1500xauto-421493.jpg"
+    },
+    {
+      "name": "French martini",
+      "equipment": [
+        "Martini glass",
+        "Cocktail shaker",
+        "Strainer"
+      ],
+      "ingredients": [
+        {
+          "quantity": 40,
+          "measure": "ml",
+          "ingredient": "Vodka"
+        },
+        {
+          "quantity": 20,
+          "measure": "ml",
+          "ingredient": "Raspberry liqueur"
+        },
+        {
+          "quantity": 50,
+          "measure": "ml",
+          "ingredient": "Pineapple juice"
+        },
+        {
+          "quantity": 1,
+          "measure": null,
+          "ingredient": "Lemon peel"
+        },
+        {
+          "quantity": null,
+          "measure": null,
+          "ingredient": "Cubed ice"
+        }
+      ],
+      "method": "Fill cocktail shaker with ice. Add vodka, raspberry liqueur and pineapple juice. Shake until cold. Strain into martini glass, garnish with the twist of lemon peel and serve.",
+      "spiritFamily": "vodka",
+      "img": "https://www.cocktail-db.com/stat/img/300/FrenchMartini.jpg"
+    },
+    {
+      "name": "Zombie",
+      "equipment": [
+        "Long glass",
+        "Cocktail shaker",
+        "Strainer"
+      ],
+      "ingredients": [
+        {
+          "quantity": 50,
+          "measure": "ml",
+          "ingredient": "Spiced rum"
+        },
+        {
+          "quantity": 25,
+          "measure": "ml",
+          "ingredient": "Rum"
+        },
+        {
+          "quantity": 15,
+          "measure": "ml",
+          "ingredient": "Orange liqueur"
+        },
+        {
+          "quantity": 15,
+          "measure": "ml",
+          "ingredient": "Apricot brandy"
+        },
+        {
+          "quantity": 50,
+          "measure": "ml",
+          "ingredient": "Orange juice"
+        },
+        {
+          "quantity": 25,
+          "measure": "ml",
+          "ingredient": "Lime juice"
+        },
+        {
+          "quantity": 15,
+          "measure": "ml",
+          "ingredient": "Grenadine"
+        },
+        {
+          "quantity": 1,
+          "measure": null,
+          "ingredient": "Orange slice"
+        },
+        {
+          "quantity": 1,
+          "measure": null,
+          "ingredient": "Pineapple piece"
+        },
+        {
+          "quantity": null,
+          "measure": "ml",
+          "ingredient": "Fresh mint"
+        },
+        {
+          "quantity": null,
+          "measure": null,
+          "ingredient": "Cubed ice"
+        }
+      ],
+      "method": "Fill cocktail shaker with ice. Add spiced rum, rum, orange liqueur, apricot brandy, orange juice, lime juice and grenadine. Shake vigorously until cold, around 60 seconds. Fill long glass with ice. Strain drink into glass. Garnish with orange slice, pineapple slice and sprig of fresh mint before serving.",
+      "spiritFamily": "rum",
+      "img": "https://www.cocktail-db.com/stat/img/300/FrenchMartini.jpg"
+    },
+    {
+      "name": "Bramble",
+      "equipment": [
+        "Rocks glass",
+        "Cocktail shaker",
+        "Strainer",
+        "Bar spoon (or teaspoon)"
+      ],
+      "ingredients": [
+        {
+          "quantity": 50,
+          "measure": "ml",
+          "ingredient": "Gin"
+        },
+        {
+          "quantity": 10,
+          "measure": "ml",
+          "ingredient": "Creme de Mure"
+        },
+        {
+          "quantity": 25,
+          "measure": "ml",
+          "ingredient": "Lemon juice"
+        },
+        {
+          "quantity": 12.5,
+          "measure": "ml",
+          "ingredient": "Sugar syrup"
+        },
+        {
+          "quantity": 1,
+          "measure": null,
+          "ingredient": "Fresh blackberry"
+        },
+        {
+          "quantity": 1,
+          "measure": null,
+          "ingredient": "Lemon wedge"
+        },
+        {
+          "quantity": null,
+          "measure": null,
+          "ingredient": "Cubed ice"
+        },
+        {
+          "quantity": null,
+          "measure": null,
+          "ingredient": "Crushed ice"
+        }
+      ],
+      "method": "Fill cocktail shaker with cubed ice and rocks glass with crushed ice. Pour all liquid ingredients excluding Creme de Mure and shake for 30 seconds. Strain mixture into rocks glass and top up with crushed ice. Pour Creme de mure over drink using bar spoon. Garnish with lemon slice and blackberry before serving.",
+      "spiritFamily": "gin",
+      "img": "http://punchdrink.com/wp-content/uploads/2013/09/Bramble.jpg"
+    },
+    {
+      "name": "Brandy Alexander",
+      "equipment": [
+        "Cocktail glass",
+        "Cocktail shaker",
+        "Strainer",
+        "Bar spoon (or teaspoon)"
+      ],
+      "ingredients": [
+        {
+          "quantity": 37.5,
+          "measure": "ml",
+          "ingredient": "Brandy"
+        },
+        {
+          "quantity": 20,
+          "measure": "ml",
+          "ingredient": "Creme de Cacao"
+        },
+        {
+          "quantity": 50,
+          "measure": "ml",
+          "ingredient": "Milk"
+        },
+        {
+          "quantity": null,
+          "measure": null,
+          "ingredient": "Grated nutmeg"
+        },
+        {
+          "quantity": null,
+          "measure": null,
+          "ingredient": "Cubed ice"
+        }
+      ],
+      "method": "Put all liquid ingredients into cocktail shaker and fill with ice. Shake for at least 30 seconds. Double strain mixture into cocktail glass. Garnish with a dusting of freshly grated nutmeg, then serve.",
+      "spiritFamily": "other",
+      "img": "http://cdn-image.foodandwine.com/sites/default/files/brandy-alexander-cocktail-c-xl-2006.jpg"
+    }
   ]
 }
