@@ -3,18 +3,17 @@ import React, { Component } from 'react';
 
 // Components
 import Equipment from './Equipment';
-import Ingredients from './Ingredients';
-import Method from './Method';
+// import Ingredients from './Ingredients';
+// import Method from './Method';
 
 class DrinkText extends Component {
 
 	render() {
+		const drink = this.props;
 		return (
 			<div className="drink-text">
-				<h1>{this.props.drink.name}</h1>
-				<Equipment equipment={this.props.drink.equipment} />
-				<Ingredients ingredients={this.props.drink.ingredients} />
-				<Method method={this.props.drink.method} />
+				<h1>{drink.name}</h1>
+				<Equipment {...drink} />
 			</div>
 		);
 	}

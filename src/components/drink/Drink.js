@@ -1,35 +1,32 @@
 import React, { Component } from 'react';
 import '../../css/Drink.css';
 
-// Services
-import { loadDrinks } from '../../lib/drinksService'
+
 
 
 // Components
 import DrinkPic from './DrinkPic';
-// import DrinkText from '../../components/drink/DrinkText';
+import DrinkText from '../../components/drink/DrinkText';
 
 
 class Drink extends Component {
-	state = {
-	}
-
-
-
 
 	render() {
-		console.log(this.props);
+		const drink = this.props;
+
 		return (
 			<div className="drink-wrapper">
 					<div className="whisky-header"></div>
 
-					{this.state.drink ?
 						<div className="drink">
-							<DrinkPic src={this.state.drink.img} alt={this.state.drink.name} />
-								<h1>{this.state.drink.name}</h1>
+							<DrinkPic
+								img={drink.img}
+								alt={drink.name}
+							/>
+							<DrinkText {...drink} />
+
 						</div>
-					: null
-					}
+
 
 					<div className="whisky-footer"></div>
 
@@ -41,9 +38,4 @@ class Drink extends Component {
 
 export default Drink;
 
-// <DrinkPic
-// 	img={this.state.drink.img}
-// 	alt={this.state.drink.name}
-// />
 
-// <DrinkText drink={this.state.drink} />

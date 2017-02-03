@@ -9,7 +9,6 @@ class DrinkPic extends Component {
 	}
 
 	render() {
-		console.log(this.props.src);
 		return (
 			<div className="drink-pic">
 				<img
