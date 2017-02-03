@@ -58,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
 .cocktail {
 	margin-top: 4rem;
 }
@@ -101,5 +105,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .spirit.whisky {
-	background-color: #994d00;
+	background-color: #E88C00;
+}
+
+.spirit-list-header {
+	height: 2rem;
+	padding: 1rem;
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.spirit-list-header h1 {
+	font-size: 1.5rem;
+}
+
+.w-100 {
+	width: 100%
+}
+
+.white {
+	color: #FFF;
+}
+
+.whisky {
+	background-color: #E88C00;
+}
+
+.gin {
+	background-color: #8900E8;
+}
+
+.rum {
+	background-color: #FF0D00;
+}
+
+.vodka {
+	background-color: #0071FF;
+}
+
+.tequila {
+	background-color: #FFFD00;
+}
+
+.other {
+	background-color: #249600;
 }

@@ -28,13 +28,14 @@
     {
       "id": 6,
       "name": "Everything else",
-      "path": "everything-else"
+      "path": "other"
     }
   ],
 
   "drinks": [
     {
       "name": "Old fashioned",
+      "id": 1,
       "equipment": [
         "Shaker or stirring glass",
         "A bar spoon (or teaspoon)",
@@ -73,6 +74,7 @@
     },
     {
       "name": "Rob Roy",
+      "id": 2,
       "equipment": [
         "Martini glass",
         "Mixing glass",
@@ -107,6 +109,7 @@
     },
     {
       "name": "Mojito",
+      "id": 3,
       "equipment": [
         "Tall glass",
         "Muddler",
@@ -146,10 +149,11 @@
       ],
       "method": "Muddle sugar, lime wedges and mint together in the glass. Half fill glass with ice, then add rum and a splash of soda water. Stir to combine. Fill remainder of glass with ice, top up with soda water, and garnish with a sprig of mint before serving.",
       "spiritFamily": "rum",
-      "img": "hhttp://josephcphillips.com/wp-content/uploads/2015/04/tray-of-mojitos.jpg"
+      "img": "http://josephcphillips.com/wp-content/uploads/2015/04/tray-of-mojitos.jpg"
     },
     {
       "name": "Margarita",
+      "id": 4,
       "equipment": [
         "Rocks glass",
         "Cocktail shaker",
@@ -183,6 +187,7 @@
     },
     {
       "name": "French martini",
+      "id": 5,
       "equipment": [
         "Martini glass",
         "Cocktail shaker",
@@ -221,6 +226,7 @@
     },
     {
       "name": "Zombie",
+      "id": 6,
       "equipment": [
         "Long glass",
         "Cocktail shaker",
@@ -289,6 +295,7 @@
     },
     {
       "name": "Bramble",
+      "id": 7,
       "equipment": [
         "Rocks glass",
         "Cocktail shaker",
@@ -343,6 +350,7 @@
     },
     {
       "name": "Brandy Alexander",
+      "id": 8,
       "equipment": [
         "Cocktail glass",
         "Cocktail shaker",

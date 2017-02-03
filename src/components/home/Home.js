@@ -8,7 +8,6 @@ import { SpiritFamilyTile } from '../SpiritFamilyTile';
 
 // Services
 import { loadSpiritFamilies } from '../../lib/cocktailService';
-import { loadDrinks } from '../../lib/drinksService'
 
 class Home extends Component {
 	state = {
@@ -18,7 +17,7 @@ class Home extends Component {
 
 	componentDidMount() {
 	  loadSpiritFamilies().then(spiritFamilies => this.setState({spiritFamilies}));
-	  loadDrinks().then(drinks => this.setState({drinks}));
+	  // loadDrinks().then(drinks => this.setState({drinks}));
 	}
 
 	handleInputChange = (e) => {
@@ -36,7 +35,7 @@ class Home extends Component {
 
 	render() {
 		return (
-			<section className="cocktail-content">
+			<div>
 			  <div className="search">
 			    <SearchForm
 			      searchText={this.state.searchText}
@@ -56,7 +55,7 @@ class Home extends Component {
 			  </div>
 
 
-			</section>
+			</div>
 		);
 	}
 }

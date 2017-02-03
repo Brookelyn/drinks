@@ -11,7 +11,9 @@ class Cocktail extends Component {
             <h1><Link to="/">Cocktail</Link></h1>
           </div>
 
-          {this.props.children}
+          <section className="cocktail-content">
+            {this.props.children}
+          </section>
         </div>
     );
   }

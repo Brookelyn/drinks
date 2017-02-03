@@ -1,6 +1,14 @@
-// Get spirit families for homepage tiles
+// Get load drinks and drink detail
+
+const drinksUrl = 'http://localhost:8080/drinks';
 
 export const loadDrinks = () => {
-	return fetch('http://localhost:8080/drinks')
+	return fetch(drinksUrl)
 	.then(res => res.json());
+}
+
+export const loadDrinkDetail = (id) => {
+	let drinks = this.loadDrinks();
+	debugger;
+	console.log(drinks);
 }
