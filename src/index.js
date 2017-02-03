@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Cocktail from './Cocktail';
+import { browserHistory, Router, Route, IndexRoute } from 'react-router';
 
-import {Router} from './components/router';
+// Components
+import Cocktail from './Cocktail';
+import Home from './components/home/Home';
+import ResultsList from './components/spirit/ResultsList';
 
 ReactDOM.render(
-  <Router>
-  	<Cocktail />
-  </Router>,
+	<Router history={browserHistory}>
+		<Route path="/" component={Cocktail}>
+			<IndexRoute component={Home} />
+			<Route path=":spiritPath" component={ResultsList} />
+		</Route>
+	</Router>,
   document.getElementById('root')
 );

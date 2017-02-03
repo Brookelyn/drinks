@@ -3,32 +3,32 @@
     {
       "id": 1,
       "name": "Whisky",
-      "path": "/whisky"
+      "path": "whisky"
     },
     {
       "id": 2,
       "name": "Gin",
-      "path": "/gin"
+      "path": "gin"
     },
     {
       "id": 3,
       "name": "Rum",
-      "path": "/rum"
+      "path": "rum"
     },
     {
       "id": 4,
       "name": "Vodka",
-      "path": "/vodka"
+      "path": "vodka"
     },
     {
       "id": 5,
       "name": "Tequila",
-      "path": "/tequila"
+      "path": "tequila"
     },
     {
       "id": 6,
       "name": "Everything else",
-      "path": "/everything-else"
+      "path": "everything-else"
     }
   ],
 
