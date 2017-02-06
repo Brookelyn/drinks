@@ -168,7 +168,8 @@ a {
 }
 
 .result-listing .img-wrapper img {
-	max-width: auto;
+	object-fit: cover;
+	width: 250px;
 	height: 250px;
 }
 
@@ -177,23 +178,52 @@ a {
 	text-align: center;
 	bottom: 20px;
 	width: 240px;
-	// padding: 8px;
 	left: 5px;
 }
 
 .result-listing .listing-drink-name h3 {
 	color: #FFF;
+	position: relative;
+	top: 6px;
+}
+
+.result-listing .listing-drink-name.tequila h3 {
+	color: #000;
+}
+
+.result-listing .listing-drink-name h3::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  z-index: -10;
+  border: 5px solid;
 }
 
 .result-listing .listing-drink-name.whisky h3::before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: -10px;
-    z-index: -10;
-    border: 5px solid;
-    border-color: transparent transparent #ad6902 transparent;
+ border-color: transparent transparent #84540b transparent;
 }
-.result-listing .listing-drink-name h3::before {left: 0;}
+
+.result-listing .listing-drink-name.gin h3::before {
+ border-color: transparent transparent #2A083E transparent;
+}
+
+.result-listing .listing-drink-name.rum h3::before {
+ border-color: transparent transparent #90110a transparent;
+}
+
+.result-listing .listing-drink-name.vodka h3::before {
+ border-color: transparent transparent #0d3567 transparent;
+}
+
+.result-listing .listing-drink-name.tequila h3::before {
+ border-color: transparent transparent #949303 transparent;
+}
+
+.result-listing .listing-drink-name.other h3::before {
+ border-color: transparent transparent #124a01 transparent;
+}
+
