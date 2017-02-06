@@ -17,21 +17,13 @@ class Drink extends Component {
 		if (this.props.name) {
 			return (
 				<div className="drink-wrapper">
-						<div className="whisky-header"></div>
-
-							<div className="drink">
-
-							<DrinkPic
-								img={this.props.img}
-								alt={this.props.name}
-							/>
-							<DrinkText {...this.props} />
-							</div>
-
-
-						<div className="whisky-footer"></div>
-
-
+					<div className="drink">
+						<DrinkPic
+							img={this.props.img}
+							alt={this.props.name}
+						/>
+						<DrinkText {...this.props} />
+					</div>
 				</div>
 			);
 		}

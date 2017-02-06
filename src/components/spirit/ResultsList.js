@@ -43,18 +43,20 @@ class ResultsList extends Component {
 		const headerStyle = this.getHeaderStyle();
 
 		return (
-			<div className="results-list">
+			<div>
 				<div className={`w-100 spirit-list-header ${headerStyle}`}>
 					<h1 className="white">{this.state.spirit === 'other' ? 'Everything else' : this.state.spirit}</h1>
 				</div>
 
+				<div className="results-list">
 
-				{filteredDrinks && filteredDrinks.map((drink, i) =>
-					<ResultListing
-						key={i}
-						{...drink}
-					/>
-				)}
+					{filteredDrinks && filteredDrinks.map((drink, i) =>
+						<ResultListing
+							key={i}
+							{...drink}
+						/>
+					)}
+				</div>
 
 			</div>
 		);

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import '../css/Drink.css';
 
 // Components
 import Equipment from './Equipment';
