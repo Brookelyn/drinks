@@ -9,7 +9,11 @@ class Equipment extends Component {
 			<div className="equipment">
 				<h3><span className="section-heading">{'Equipment'}</span></h3>
 				<ul className="mb3">
-					{'Something here'}
+					{this.props.equipment.map((listing, i) => {
+						return (
+							<li key={i} className="listing">{listing}</li>
+						);
+					})}
 				</ul>
 			</div>
 		);
@@ -19,8 +23,4 @@ class Equipment extends Component {
 export default Equipment;
 
 
-// {this.props.equipment.map((listing, i) => {
-// 	return (
-// 		<li key={i} className="listing">{listing}</li>
-// 	);
-// })}
+

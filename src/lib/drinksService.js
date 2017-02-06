@@ -7,8 +7,11 @@ export const loadDrinks = () => {
 	.then(res => res.json());
 }
 
-export const loadDrinkDetail = (id) => {
-	let drinks = this.loadDrinks();
+export const loadDrinkDetail = (spirit, id) => {
 	debugger;
-	console.log(drinks);
+	let drinks = this.loadDrinks();
+	let drink = drinks.find(drink => {
+		return drink.id === id;
+	});
+
 }

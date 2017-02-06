@@ -10,32 +10,40 @@ import DrinkText from '../../components/drink/DrinkText';
 
 
 class Drink extends Component {
-
 	render() {
-		const drink = this.props;
+		if (!this.props.name) {
+			return (
+				<h1></h1>
+			);
+		}
 
-		return (
-			<div className="drink-wrapper">
-					<div className="whisky-header"></div>
+		if (this.props.name) {
+			return (
+				<div className="drink-wrapper">
+						<div className="whisky-header"></div>
 
-						<div className="drink">
+							<div className="drink">
+
 							<DrinkPic
-								img={drink.img}
-								alt={drink.name}
+								img={this.props.img}
+								alt={this.props.name}
 							/>
-							<DrinkText {...drink} />
-
-						</div>
-
-
-					<div className="whisky-footer"></div>
+							<DrinkText {...this.props} />
+							</div>
 
 
-			</div>
-		);
+						<div className="whisky-footer"></div>
+
+
+				</div>
+			);
+		}
+
 	}
 }
 
 export default Drink;
+
+
 
 

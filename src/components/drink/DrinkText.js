@@ -9,11 +9,10 @@ import Equipment from './Equipment';
 class DrinkText extends Component {
 
 	render() {
-		const drink = this.props;
 		return (
 			<div className="drink-text">
-				<h1>{drink.name}</h1>
-				<Equipment {...drink} />
+				<h1>{this.props.name}</h1>
+				<Equipment equipment={this.props.equipment} />
 			</div>
 		);
 	}
