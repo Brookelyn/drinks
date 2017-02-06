@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 class Equipment extends Component {
 
 	render() {
-		console.log(this.props);
-		// debugger;
 		return (
 			<div className="equipment">
 				<h3><span className="section-heading">{'Equipment'}</span></h3>

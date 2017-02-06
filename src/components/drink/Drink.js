@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import '../../css/Drink.css';
 
-
-
-
 // Components
 import DrinkPic from './DrinkPic';
 import DrinkText from '../../components/drink/DrinkText';
