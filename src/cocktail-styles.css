@@ -101,7 +101,7 @@ a {
 	width: 30%;
 	height: 300px;
 	margin: 10px;
-	position: relative
+	position: relative;
 }
 
 .spirit-categories .spirit .img-wrapper {
@@ -121,11 +121,11 @@ a {
 	width: 90%;
 	bottom: 10%;
 	left: -10px;
-	color: #FFF
+	color: #FFF;
 }
 
 .spirit-categories .spirit .spirit-family-name.tequila {
-	color: #000
+	color: #000;
 }
 
 .spirit-categories .spirit .spirit-family-name h2 {
@@ -134,9 +134,7 @@ a {
 	text-align: center;
 }
 
-
-
-// Results list
+/* Can I put in comments */
 
 .spirit-list-header {
 	height: 2rem;
@@ -146,11 +144,9 @@ a {
 }
 
 .spirit-list-header h1 {
-	font-size: 1.5rem;
-}
-
-.w-100 {
-	width: 100%
+	font-size: 1.75rem;
+	position: relative;
+	top: 4px;
 }
 
 .white {
@@ -183,10 +179,15 @@ a {
 
 .results-list {
 	display: flex;
+	background-color: #FFF;
+	margin: 0 8px;
+	padding-top: 1rem;
+	z-index: -11;
 }
 
 .result-listing {
 	position: relative;
+	z-index: 10;
 }
 
 .result-listing .img-wrapper {
@@ -221,6 +222,7 @@ a {
 	color: #000;
 }
 
+.spirit-list-header h1::before,
 .spirit-categories .spirit .spirit-family-name h2::before,
 .result-listing .listing-drink-name h3::before {
   content: '';
@@ -228,10 +230,18 @@ a {
   width: 0;
   height: 0;
   position: absolute;
-  // top: -16px;
   left: 0;
   z-index: -10;
-  // border: 5px solid;
+}
+
+.spirit-list-header h1::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 0;
+	z-index: -10;
 }
 
 .spirit-categories .spirit .spirit-family-name h2::before {
@@ -243,6 +253,16 @@ a {
 	top: -16px;
 	border: 5px solid;
 }
+
+.spirit-list-header h1::before,
+.spirit-list-header h1::after {
+    bottom: -42px;
+    border: 11px solid;
+    border-color: #242424 transparent transparent transparent;
+}
+
+.spirit-list-header h1::before {left: -16px;}
+.spirit-list-header h1::after {right: -16px;}
 
 .spirit-categories .spirit .spirit-family-name.whisky h2::before,
 .result-listing .listing-drink-name.whisky h3::before {
@@ -273,4 +293,6 @@ a {
 .result-listing .listing-drink-name.other h3::before {
  border-color: transparent transparent #124a01 transparent;
 }
+
+
 

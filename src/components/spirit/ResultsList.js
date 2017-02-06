@@ -35,6 +35,10 @@ class ResultsList extends Component {
 		}
 	}
 
+	capitalizeFirstLetter(string) {
+	   return string.charAt(0).toUpperCase() + string.slice(1);
+	}
+
 	render() {
 		const filteredDrinks = this.state.drinks.filter((drink) => {
 			return drink.spiritFamily === this.state.spirit;
@@ -44,8 +48,8 @@ class ResultsList extends Component {
 
 		return (
 			<div>
-				<div className={`w-100 spirit-list-header ${headerStyle}`}>
-					<h1 className="white">{this.state.spirit === 'other' ? 'Everything else' : this.state.spirit}</h1>
+				<div className={`spirit-list-header w-100 ${headerStyle}`}>
+					<h1 className="white">{this.state.spirit === 'other' ? 'Everything else' : this.capitalizeFirstLetter(this.state.spirit)}</h1>
 				</div>
 
 				<div className="results-list">

@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 
 // Components
-import { SearchForm } from '../search/SearchForm';
+// import { SearchForm } from '../search/SearchForm';
 // import { SpiritFamilyTile } from '../SpiritFamilyTile';
 
 // Services
