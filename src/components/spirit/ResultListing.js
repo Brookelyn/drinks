@@ -30,7 +30,6 @@ class ResultListing extends Component {
 				className="result-listing">
 					<div className="img-wrapper">
 						<img
-							className="list-img"
 							src={this.props.img}
 							alt={this.props.name}
 						/>

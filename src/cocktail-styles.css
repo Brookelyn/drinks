@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
 	text-decoration: none;
+	color: #000;
 }
 
 .cocktail {
@@ -80,7 +81,6 @@ a {
 	margin: 0 auto;
 }
 
-
 .search {
 	margin: 2rem 0;
 	text-align: center;
@@ -94,19 +94,49 @@ a {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	margin-top: 2rem;
 }
 
-.spirit {
-	width: 45%;
-	border: 2px solid darkblue;
-	height: 200px;
-	margin-bottom: 2rem;
-	border-radius: 5%;
+.spirit-categories .spirit {
+	width: 30%;
+	height: 300px;
+	margin: 10px;
+	position: relative
 }
 
-.spirit.whisky {
-	background-color: #E88C00;
+.spirit-categories .spirit .img-wrapper {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
 }
+
+.spirit-categories .spirit .img-wrapper img {
+	object-fit: cover;
+	width: 100%;
+	min-height: 100%;
+}
+
+.spirit-categories .spirit .spirit-family-name {
+	position: absolute;
+	width: 90%;
+	bottom: 10%;
+	left: -10px;
+	color: #FFF
+}
+
+.spirit-categories .spirit .spirit-family-name.tequila {
+	color: #000
+}
+
+.spirit-categories .spirit .spirit-family-name h2 {
+	font-size: 1.75rem;
+	line-height: 3.25rem;
+	text-align: center;
+}
+
+
+
+// Results list
 
 .spirit-list-header {
 	height: 2rem;
@@ -191,38 +221,55 @@ a {
 	color: #000;
 }
 
+.spirit-categories .spirit .spirit-family-name h2::before,
 .result-listing .listing-drink-name h3::before {
   content: '';
   display: block;
   width: 0;
   height: 0;
   position: absolute;
-  top: -16px;
+  // top: -16px;
   left: 0;
   z-index: -10;
-  border: 5px solid;
+  // border: 5px solid;
 }
 
+.spirit-categories .spirit .spirit-family-name h2::before {
+	top: -20px;
+	border: 10px solid;
+}
+
+.result-listing .listing-drink-name h3::before {
+	top: -16px;
+	border: 5px solid;
+}
+
+.spirit-categories .spirit .spirit-family-name.whisky h2::before,
 .result-listing .listing-drink-name.whisky h3::before {
  border-color: transparent transparent #84540b transparent;
 }
 
+.spirit-categories .spirit .spirit-family-name.gin h2::before,
 .result-listing .listing-drink-name.gin h3::before {
  border-color: transparent transparent #2A083E transparent;
 }
 
+.spirit-categories .spirit .spirit-family-name.rum h2::before,
 .result-listing .listing-drink-name.rum h3::before {
  border-color: transparent transparent #90110a transparent;
 }
 
+.spirit-categories .spirit .spirit-family-name.vodka h2::before,
 .result-listing .listing-drink-name.vodka h3::before {
  border-color: transparent transparent #0d3567 transparent;
 }
 
+.spirit-categories .spirit .spirit-family-name.tequila h2::before,
 .result-listing .listing-drink-name.tequila h3::before {
  border-color: transparent transparent #949303 transparent;
 }
 
+.spirit-categories .spirit .spirit-family-name.other h2::before,
 .result-listing .listing-drink-name.other h3::before {
  border-color: transparent transparent #124a01 transparent;
 }
