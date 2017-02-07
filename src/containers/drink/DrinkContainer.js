@@ -26,7 +26,9 @@ class DrinkContainer extends Component {
 		});
 
 		return (
-			<Drink {...drink} />
+			<div className="drink-wrapper">
+				<Drink {...drink} />
+			</div>
 		);
 	}
 }

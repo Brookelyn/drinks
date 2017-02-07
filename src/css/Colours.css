@@ -2,6 +2,14 @@
   color: #FFF;
 }
 
+.spirit-list-header h1 {
+  color: #FFF;
+}
+
+.spirit-list-header.bg-tequila h1 {
+  color: #000;
+}
+
 .whisky,
 .listing.ul-whisky::before {
   color: #E88C00;
