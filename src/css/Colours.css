@@ -66,7 +66,7 @@
 }
 
 .section-heading.underline-rum {
-  border-bottom-color: #FF0D00;
+  border-bottom-color: ;
 }
 
 .section-heading.underline-vodka {
@@ -79,6 +79,36 @@
 
 .section-heading.underline-other {
   border-bottom-color: #249600;
+}
+
+.spirit-list-header.bg-whisky h1::before,
+.spirit-list-header.bg-whisky h1::after {
+  border-color: #84540b transparent transparent transparent;
+}
+
+.spirit-list-header.bg-gin h1::before,
+.spirit-list-header.bg-gin h1::after {
+  border-color: #2A083E transparent transparent transparent;
+}
+
+.spirit-list-header.bg-rum h1::before,
+.spirit-list-header.bg-rum h1::after {
+  border-color: #90110a transparent transparent transparent;
+}
+
+.spirit-list-header.bg-vodka h1::before,
+.spirit-list-header.bg-vodka h1::after {
+  border-color: #0d3567 transparent transparent transparent;
+}
+
+.spirit-list-header.bg-tequila h1::before,
+.spirit-list-header.bg-tequila h1::after {
+  border-color: #949303 transparent transparent transparent;
+}
+
+.spirit-list-header.bg-other h1::before,
+.spirit-list-header.bg-other h1::after {
+  border-color: #124a01 transparent transparent transparent;
 }
 
 .spirit-categories .spirit .spirit-family-name.bg-whisky h2::before,
