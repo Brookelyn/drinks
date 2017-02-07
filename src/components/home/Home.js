@@ -13,7 +13,7 @@ import { loadDrinks } from '../../lib/drinksService';
 
 class Home extends Component {
 	state = {
-	  searchText: '',
+	  // searchText: '',
 	  spiritFamilies: []
 	}
 
@@ -92,10 +92,6 @@ class Home extends Component {
 			</div>
 		);
 	}
-}
-
-Home.propTypes = {
-
 }
 
 export default Home;

@@ -12,11 +12,11 @@ import DrinkContainer from './containers/drink/DrinkContainer';
 ReactDOM.render(
 	<Router history={browserHistory}>
 		<Route path="/" component={Cocktail}>
-			<IndexRoute component={Home} />
 			<Route path=":spiritPath" component={SpiritFamilyContainer}>
 				<IndexRoute component={ResultsList} />
 				<Route path=":drinkId" component={DrinkContainer} />
 			</Route>
+			<IndexRoute component={Home} />
 		</Route>
 	</Router>,
   document.getElementById('root')

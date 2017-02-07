@@ -3,8 +3,6 @@ import { Link } from 'react-router';
 
 class SpiritFamilyTile extends Component {
 
-
-
 	render() {
 		return (
 			<div className={`spirit`}>

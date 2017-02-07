@@ -64,16 +64,37 @@ a {
 }
 
 .cocktail {
-	margin-top: 4rem;
+	margin-top: 2rem;
 }
 
-.header {
+.navigation {
 	text-align: center;
+	background-color: #FFF;
+	// position: fixed;
+	// width: 100%;
 }
 
-.header h1 {
+.navigation .nav-cocktail {
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 1rem;
+}
+
+.navigation .nav-cocktail h1 {
 	font-size: 2rem;
 }
+
+.navigation .spirit-links {
+	padding: 1rem 0;
+	border-bottom: 1px solid #cccccc;
+}
+
+.navigation .spirit-links a {
+	display: inline-block;
+	color: #cccccc;
+	padding: 0 1rem;
+}
+
+
 
 .cocktail-content {
 	max-width: 1200px;
