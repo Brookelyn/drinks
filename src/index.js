@@ -12,8 +12,10 @@ ReactDOM.render(
 	<Router history={browserHistory}>
 		<Route path="/" component={Cocktail}>
 			<IndexRoute component={Home} />
-			<Route path=":spiritPath" component={ResultsList} />
-			<Route path=":spiritPath/:drinkId" component={DrinkContainer} />
+			<Route path=":spiritPath">
+				<IndexRoute component={ResultsList} />
+				<Route path=":drinkId" component={DrinkContainer} />
+			</Route>
 		</Route>
 	</Router>,
   document.getElementById('root')
