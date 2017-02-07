@@ -9,9 +9,9 @@ import DrinkPic from './DrinkPic';
 import DrinkText from '../../components/drink/DrinkText';
 
 
-
 class Drink extends Component {
-	getBackgroundStyle() {
+
+	getSpiritStyle() {
 		switch (this.props.spiritFamily) {
 			case 'whisky':
 				return 'whisky';
@@ -33,7 +33,7 @@ class Drink extends Component {
 	render() {
 		if (!this.props.name) {
 			return (
-				<h1></h1>
+				<h1>{'Loading'}</h1>
 			);
 		}
 

@@ -33,22 +33,6 @@
   text-align: center;
 }
 
-.whisky-header {
-  height: 30px;
-  background-color: #994d00;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
-.whisky-footer {
-  height: 60px;
-  background-color: #994d00;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 h3 {
   font-size: 1.25rem;
   line-height: 2rem;
@@ -56,21 +40,26 @@ h3 {
 }
 
 .section-heading {
-  border-bottom: 3px solid #994d00;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  // border-bottom-color:  #994d00;
 }
 
 .mb3 {
   margin-bottom: 1rem;
 }
 
-li::before {
+li {
+  colour: #000;
+}
+
+.listing::before {
   content: '■ ';
-  color: #994d00;
   font-size: 2rem;
   line-height: 0;
   position: absolute;
   margin-left: -1.5rem;
-  top: 43%
+  top: 43%;
 }
 
 .listing {

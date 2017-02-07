@@ -22,17 +22,17 @@ class ResultsList extends Component {
 	getHeaderStyle() {
 		switch (this.state.spirit) {
 			case 'whisky':
-				return 'whisky';
+				return 'bg-whisky';
 			case 'gin':
-				return 'gin';
+				return 'bg-gin';
 			case 'rum':
-				return 'rum';
+				return 'bg-rum';
 			case 'vodka':
-				return 'vodka';
+				return 'bg-vodka';
 			case 'tequila':
-				return 'tequila';
+				return 'bg-tequila';
 			case 'other':
-				return 'other';
+				return 'bg-other';
 			default:
 				return '';
 		}
@@ -60,6 +60,7 @@ class ResultsList extends Component {
 					{filteredDrinks && filteredDrinks.map((drink, i) =>
 						<ResultListing
 							key={i}
+							spiritStyle={headerStyle}
 							{...drink}
 						/>
 					)}

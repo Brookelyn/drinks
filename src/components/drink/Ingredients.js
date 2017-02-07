@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import UnderlinedH3 from './UnderlinedH3';
+
 class Ingredients extends Component {
 
 	convertToArray(input) {
@@ -13,13 +15,12 @@ class Ingredients extends Component {
 	render() {
 		return (
 			<div className="ingredients">
-				<h3><span className="section-heading">{'Ingredients'}</span></h3>
+				<UnderlinedH3 text={'Ingredients'} underlineStyle={this.props.spiritStyle}/>
 				<ul className="mb3">
 					{this.props.ingredients.map((ingredient, i) => {
 						let list = this.convertToArray(ingredient);
-						console.log(list);
 						return (
-							<li key={i} className="listing">
+							<li key={i} className={`listing ul-${this.props.spiritStyle}`}>
 								{list.quantity && list.quantity + ' '}
 								{list.measure && list.measure + ' '}
 								{list.ingredient}

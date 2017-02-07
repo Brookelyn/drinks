@@ -6,17 +6,27 @@ This is the first time I've started a React project from scratch, although I did
 
 ## Getting up and running
 
-First clone the project to your local machine.
+First clone the project to your local machine. You'll also need to have Node installed and set up.
 
-Then, in the src folder, run:
+If you don't use json-server:
 
-### `json-server -p 8080 db.json`
+```sh
+npm install -g json-server
+```
 
-This will start the mock JSON server used by the project.
+In the src folder, first run:
 
-Then run:
+```sh
+json-server -p 8080 db.json
+```
 
-### `npm start`
+This will start the mock JSON server used by the project on localhost port 8080.
+
+Then in the project folder, run:
+
+```sh
+npm start
+```
 
 Which, as usual with create-react-app projects, will start the project at [http://localhost:3000](http://localhost:3000).
 

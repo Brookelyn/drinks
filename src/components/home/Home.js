@@ -53,17 +53,17 @@ class Home extends Component {
 	getStyle(input) {
 		switch (input.toLowerCase()) {
 			case 'whisky':
-				return 'whisky';
+				return 'bg-whisky';
 			case 'gin':
-				return 'gin';
+				return 'bg-gin';
 			case 'rum':
-				return 'rum';
+				return 'bg-rum';
 			case 'vodka':
-				return 'vodka';
+				return 'bg-vodka';
 			case 'tequila':
-				return 'tequila';
+				return 'bg-tequila';
 			case 'everything else':
-				return 'other';
+				return 'bg-other';
 			default:
 				return '';
 		}

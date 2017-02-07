@@ -2,56 +2,112 @@
   color: #FFF;
 }
 
-.whisky {
+.whisky,
+.listing.ul-whisky::before {
+  color: #E88C00;
+}
+
+.gin,
+.listing.ul-gin::before {
+ color: #8900E8;
+}
+
+.rum,
+.listing.ul-rum::before {
+  color: #FF0D00;
+}
+
+.vodka,
+.listing.ul-vodka::before {
+  color: #0071FF;
+}
+
+.tequila,
+.listing.ul-tequila::before {
+  color: #FFFD00;
+}
+
+.other,
+.listing.ul-other::before {
+  color: #249600;
+}
+
+/* Background colours */
+.bg-whisky {
   background-color: #E88C00;
 }
 
-.gin {
+.bg-gin {
   background-color: #8900E8;
 }
 
-.rum {
+.bg-rum {
   background-color: #FF0D00;
 }
 
-.vodka {
+.bg-vodka {
   background-color: #0071FF;
 }
 
-.tequila {
+.bg-tequila {
   background-color: #FFFD00;
 }
 
-.other {
+.bg-other {
   background-color: #249600;
 }
 
-.spirit-categories .spirit .spirit-family-name.whisky h2::before,
-.result-listing .listing-drink-name.whisky h3::before {
+.section-heading.underline-whisky {
+  border-bottom-color: #E88C00;
+}
+
+.section-heading.underline-gin {
+  border-bottom-color: #8900E8;
+}
+
+.section-heading.underline-rum {
+  border-bottom-color: #FF0D00;
+}
+
+.section-heading.underline-vodka {
+  border-bottom-color: #0071FF;
+}
+
+.section-heading.underline-tequila {
+  border-bottom-color: #FFFD00;
+}
+
+.section-heading.underline-other {
+  border-bottom-color: #249600;
+}
+
+.spirit-categories .spirit .spirit-family-name.bg-whisky h2::before,
+.result-listing .listing-drink-name.bg-whisky h3::before {
  border-color: transparent transparent #84540b transparent;
 }
 
-.spirit-categories .spirit .spirit-family-name.gin h2::before,
-.result-listing .listing-drink-name.gin h3::before {
+.spirit-categories .spirit .spirit-family-name.bg-gin h2::before,
+.result-listing .listing-drink-name.bg-gin h3::before {
  border-color: transparent transparent #2A083E transparent;
 }
 
-.spirit-categories .spirit .spirit-family-name.rum h2::before,
-.result-listing .listing-drink-name.rum h3::before {
+.spirit-categories .spirit .spirit-family-name.bg-rum h2::before,
+.result-listing .listing-drink-name.bg-rum h3::before {
  border-color: transparent transparent #90110a transparent;
 }
 
-.spirit-categories .spirit .spirit-family-name.vodka h2::before,
-.result-listing .listing-drink-name.vodka h3::before {
+.spirit-categories .spirit .spirit-family-name.bg-vodka h2::before,
+.result-listing .listing-drink-name.bg-vodka h3::before {
  border-color: transparent transparent #0d3567 transparent;
 }
 
-.spirit-categories .spirit .spirit-family-name.tequila h2::before,
-.result-listing .listing-drink-name.tequila h3::before {
+.spirit-categories .spirit .spirit-family-name.bg-tequila h2::before,
+.result-listing .listing-drink-name.bg-tequila h3::before {
  border-color: transparent transparent #949303 transparent;
 }
 
-.spirit-categories .spirit .spirit-family-name.other h2::before,
-.result-listing .listing-drink-name.other h3::before {
+.spirit-categories .spirit .spirit-family-name.bg-other h2::before,
+.result-listing .listing-drink-name.bg-other h3::before {
  border-color: transparent transparent #124a01 transparent;
 }
+
