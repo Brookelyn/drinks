@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import './cocktail-styles.css';
 import { Link } from 'react-router';
+
+// CSS
+import './cocktail-styles.css';
+import './css/Colours.css';
 
 class Cocktail extends Component {
 

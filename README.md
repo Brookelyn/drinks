@@ -6,7 +6,9 @@ This is the first time I've started a React project from scratch, although I did
 
 ## Getting up and running
 
-In the src folder, first run:
+First clone the project to your local machine.
+
+Then, in the src folder, run:
 
 ### `json-server -p 8080 db.json`
 

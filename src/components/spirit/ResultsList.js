@@ -6,6 +6,9 @@ import { loadDrinks } from '../../lib/drinksService'
 // Components
 import ResultListing from './ResultListing';
 
+import '../../css/Colours.css';
+
+
 class ResultsList extends Component {
 	state = {
 		drinks: [],
