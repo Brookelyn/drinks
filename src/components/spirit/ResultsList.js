@@ -32,9 +32,7 @@ class ResultsList extends Component {
 			return drink.spiritFamily === this.state.spirit;
 		});
 
-		console.log(this.props);
 		return (
-
 				<div className="results-list">
 
 					{filteredDrinks && filteredDrinks.map((drink, i) =>

@@ -2,6 +2,22 @@
   color: #FFF;
 }
 
+.black {
+  color: #000;
+}
+
+.nav-link {
+  color: #cccccc;
+}
+
+.nav-link.tequila {
+  color: #000;
+}
+
+.spirit-categories .spirit .spirit-family-name.bg-tequila h2 {
+  color: #000;
+}
+
 .spirit-list-header h1 {
   color: #FFF;
 }
@@ -141,7 +157,7 @@
 
 .spirit-categories .spirit .spirit-family-name.bg-tequila h2::before,
 .result-listing .listing-drink-name.bg-tequila h3::before {
- border-color: transparent transparent #949303 transparent;
+  border-color: transparent transparent #949303 transparent;
 }
 
 .spirit-categories .spirit .spirit-family-name.bg-other h2::before,

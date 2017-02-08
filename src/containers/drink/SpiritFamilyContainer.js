@@ -12,7 +12,7 @@ class SpiritFamily extends Component {
 		return (
 			<div>
 			<div className={`spirit-list-header w-100 bg-${this.props.params.spiritPath}`}>
-				<h1>{this.capitaliseFirstLetter(this.props.params.spiritPath)}</h1>
+				<h1>{this.props.params.spiritPath === 'other' ? 'Everything else' : this.capitaliseFirstLetter(this.props.params.spiritPath)}</h1>
 			</div>
 			{this.props.children}
 			</div>
@@ -21,10 +21,3 @@ class SpiritFamily extends Component {
 }
 
 export default SpiritFamily;
-
-// <DrinkPic
-// 	img={this.state.drink.img}
-// 	alt={this.state.drink.name}
-// />
-
-// <DrinkText drink={this.state.drink} />
