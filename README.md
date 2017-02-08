@@ -32,3 +32,14 @@ npm start
 
 Which, as usual with create-react-app projects, will start the project at [http://localhost:3000](http://localhost:3000).
 
+# Potential additional functionality
+
+In no particular order and in what is certainly not a comprehensive list, I'm thinking about adding the following (eventually):
+
+* Add a new drink
+* Infinite scroll for results lists
+* Search for a specific drink
+* Allow user to select up to three ingredients, then provide only drinks that use all selected ingredients
+* When viewing a drink, suggest similar drinks using same ingredients
+* Loading/transition UX
+

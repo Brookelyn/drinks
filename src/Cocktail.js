@@ -7,6 +7,7 @@ import './css/Colours.css';
 
 // Services
 import { loadSpiritFamilies } from './lib/cocktailService';
+import { loadDrinks } from './lib/drinksService';
 
 class Cocktail extends Component {
   state = {
@@ -15,6 +16,7 @@ class Cocktail extends Component {
 
   componentDidMount() {
     loadSpiritFamilies().then(spiritFamilies => this.setState({spiritFamilies}));
+    loadDrinks().then(drinks => this.setState({drinks}));
   }
 
   render() {
@@ -29,8 +31,13 @@ class Cocktail extends Component {
             <div className="spirit-links">
               {this.state.spiritFamilies.map((link) => {
                 return (
-                  <Link to={link.path} key={link.id}>
-                    <div className={`nav-link`}>
+                  <Link
+                    to={`/${link.path}`}
+                    key={link.id}
+                    activeClassName={link.path}
+                    className={`nav-link`}
+                  >
+                    <div>
                       <h2>{link.name}</h2>
                     </div>
                   </Link>

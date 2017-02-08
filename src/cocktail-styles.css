@@ -88,13 +88,11 @@ a {
 	border-bottom: 1px solid #cccccc;
 }
 
-.navigation .spirit-links a {
+.navigation .spirit-links .nav-link {
 	display: inline-block;
 	color: #cccccc;
 	padding: 0 1rem;
 }
-
-
 
 .cocktail-content {
 	max-width: 1200px;

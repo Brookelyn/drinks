@@ -4,38 +4,15 @@ import '../../css/Drink.css';
 
 class SpiritFamily extends Component {
 
-	componentWillMount() {
-		this.getStyleAndHeaderText();
-	}
-
-	getStyleAndHeaderText() {
-		let path;
-		if (this.props.location.pathname.charAt(0) === '/') {
-			path = this.props.location.pathname.slice(1);
-		} else {
-			path = this.props.location.pathname;
-		}
-
-		this.setState({
-			style: 'bg-' + path,
-		});
-
-		if (path === 'other') {
-			this.setState({
-				text: 'Everything else'
-			});
-		}
-
-		this.setState({
-			text: path.charAt(0).toUpperCase() + path.slice(1)
-		});
+	capitaliseFirstLetter(string) {
+		return string.charAt(0).toUpperCase() + string.slice(1);
 	}
 
 	render() {
 		return (
 			<div>
-			<div className={`spirit-list-header w-100 ${this.state.style}`}>
-				<h1>{this.state.text}</h1>
+			<div className={`spirit-list-header w-100 bg-${this.props.params.spiritPath}`}>
+				<h1>{this.capitaliseFirstLetter(this.props.params.spiritPath)}</h1>
 			</div>
 			{this.props.children}
 			</div>

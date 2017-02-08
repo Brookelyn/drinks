@@ -19,11 +19,20 @@ class ResultsList extends Component {
 	  loadDrinks().then(drinks => this.setState({drinks}));
 	}
 
+	componentWillReceiveProps(nextProps) {
+		if (nextProps !== this.props) {
+			this.setState({
+				spirit: nextProps.params.spiritPath
+			});
+		}
+	}
+
 	render() {
 		const filteredDrinks = this.state.drinks.filter((drink) => {
 			return drink.spiritFamily === this.state.spirit;
 		});
 
+		console.log(this.props);
 		return (
 
 				<div className="results-list">
