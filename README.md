@@ -4,6 +4,8 @@ At work, I'm using React with [Freezer.js](https://github.com/arqex/freezer), Le
 
 This is the first time I've started a React project from scratch, although I did take advantage of the [Create React App](https://github.com/facebookincubator/create-react-app) boilerplate. It currently uses [json-server](https://github.com/typicode/json-server) to simulate a full RESTful API and [react-router](https://github.com/ReactTraining/react-router) for routing purposes.
 
+*Please be aware this project is a work in progress, and as such certain areas may not work at any given time if I'm updating them.*
+
 ## Getting up and running
 
 First clone the project to your local machine. You'll also need to have Node installed and set up.
